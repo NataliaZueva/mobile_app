@@ -43,29 +43,6 @@ enum class Direction {
     UP, DOWN, LEFT, RIGHT
 }
 
-//fun moveRobot(r: Robot, toX: Int, toY: Int) {
-//    while (r.x != toX || r.y != toY) {
-//        if (r.x < toX) {
-//            r.stepForward()
-//        } else if (r.x > toX) {
-//            r.turnLeft()
-//            r.turnLeft()
-//            r.stepForward()
-//            r.turnRight()
-//            r.turnRight()
-//        }
-//
-//        if (r.y < toY) {
-//            r.turnRight()
-//            r.stepForward()
-//            r.turnLeft()
-//        } else if (r.y > toY) {
-//            r.turnLeft()
-//            r.stepForward()
-//            r.turnRight()
-//        }
-//    }
-//}
 
 fun moveRobot(r: Robot, toX: Int, toY: Int) {
     val diffX = toX - r.x
