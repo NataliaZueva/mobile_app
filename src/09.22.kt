@@ -12,8 +12,10 @@ fun calculateRabbits(months: Int, ratio: Int): Long {
 }
 
 fun main() {
-    val months = 32
-    val ratio = 5
+    println("Enter the number of months (otherwise it will be 32): ")
+    val months = readLine()?.toIntOrNull() ?: 32
+    println("Enter the ratio (otherwise it will be 5): ")
+    val ratio = readLine()?.toIntOrNull() ?: 5
     val totalRabbits = calculateRabbits(months, ratio)
     println("Total number of rabbits after $months months: $totalRabbits")
 }
